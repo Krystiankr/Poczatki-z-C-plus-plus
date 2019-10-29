@@ -76,4 +76,17 @@
       <image source="img/Vannevar-Bush.jpg">Vannevar Bush</image>
     </media>
 	</information>
+  <stopka>
+    <up>
+      
+    </up>
+    <spis_tresci>
+      <spis>Informacje o przedmiocie</spis>
+      <spis>Obrazek</spis>
+      <spis>Kontakt</spis>
+    </spis_tresci>
+    <kontakt>
+      <member></member>  
+    </kontakt>
+  </stopka>
 </course>
