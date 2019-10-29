@@ -6,6 +6,7 @@
         <xs:element name="author" type="authorType"/>
         <xs:element name="classes" type="classesType" minOccurs="0" maxOccurs="unbounded" />
         <xs:element name="information" type="informationType"/>
+        <xs:element name="stopka" type="stopka1"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -121,6 +122,34 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:complexType name="stopka1">
+    <xs:sequence>
+      <xs:element name="up">
+        <xs:complexType>
+          <xs:sequence>
+            
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="spis_tresci" type="spiss"/>
+      <xs:element name="Tryb_nocny" type="kontakt1"/>
+    </xs:sequence>
+  </xs:complexType>
 
-
+  <xs:complexType name="kontakt1">
+    <xs:choice>
+      <xs:element ref="tak"/>
+      <xs:element ref="nie"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="tak"/>
+  <xs:element name="nie"/>
+  
+  
+  <xs:complexType name="spiss">
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="spis" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  
   </xs:schema>
