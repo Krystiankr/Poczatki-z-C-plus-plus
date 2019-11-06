@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//36min
 int main() {
 	int wejscie;
 	cin >> wejscie;
