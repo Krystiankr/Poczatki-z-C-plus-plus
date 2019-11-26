@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-// kod jest dobry, ale stos nie działa
+// kod jest dobry ale na stos nie działa
 int main() {
-	int k;
-	cin >> k;
-	for (int m = 0; m < k; m++)
+	int o;
+	cin >> o;
+	for (int m = 0; m < o; m++)
 	{
 		int a, b;
 		int c, d;
@@ -47,6 +47,11 @@ int main() {
 				cout << tablep[i][j] << " ";
 			}cout << endl;
 		}
+		free(*arr);
+		free(*arrx);
+		free(*tablep);
+
+
 	}
 	return 0;
 }
