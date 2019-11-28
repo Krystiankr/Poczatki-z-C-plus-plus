@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-//u mnie dziala na stos nie
+// u mnie działa na stos nie
 int main() {
 	string tablica[100] = {};
 	int dlugosc_kolejki;
@@ -12,8 +12,9 @@ int main() {
 		if ((ostatni_element < dlugosc_kolejki) and wejscie[0] == '+') {
 			for (size_t i = 1; i < wejscie.length(); i++) {
 				tablica[ostatni_element] += wejscie[i];
-			}
-			cout << tablica[ostatni_element++] << endl;
+				
+			}ostatni_element++;
+			cout << "OK" << endl;
 		}
 		else if (wejscie[0] == '-') {
 			if (ostatni_element ==0) { cout << "Error\n"; }
